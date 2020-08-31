@@ -59,7 +59,6 @@ main{
 
 .cards{
     display: grid;
-    grid-template: auto;
     grid-auto-flow: row;
 }
 
