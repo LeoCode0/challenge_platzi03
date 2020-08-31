@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/mobile.css">
+    <link rel="stylesheet" href="./src/css/desktop.css" media="screen and(min-width: 1024px)">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> 
     <title>Frontend Mentor | Four card feature section</title>
   </head>
   <body>
@@ -10,51 +13,65 @@
       <section class="information">
         <div class="information__titles">
           <h3 class="information__titles--h3">Reliable, efficient delivery</h3>
-          <h2 class="information__titles--h2">Powered by Technology Our Artificial</h2>
+          <h1 class="information__titles--h1">Powered by Technology</h2>
         </div>
         <div class="information__text">
           <p class="information__text--paragraph">
-            Intelligence powered tools use millions of project data points to ensure
+            Our Artificial Intelligence powered tools use millions of project data points to ensure
             that your project is successful
           </p>
         </div>
       </section>
-      <section class="card green">
-        <div class="card__text">
-          <h1 class="card__text--title">Supervisor</h1>
-          <p class="card__text--description">
-            Monitors activity to identify
-            project roadblocks
-          </p>
-        </div>
-      </section>
-      <section class="card red" >
-        <div class="card__text">
-          <h1 class="card__text--title">Team Builder</h1>
-          <p class="class__text--description">
-            Scans our talent network to create the
-            optimal team for your project
-          </p>
-        </div>
-      </section>
-      <section class="card yellow" >
-        <div class="card__text">
-          <h1 class="card__text--title">Karma</h1>
-          <p class="class__text--description">
-            Regularly evaluates our talent to ensure
-            quality
-          </p>
-        </div>
-      </section>
-      <section class="card blue" >
-        <div class="card__text">
-          <h1 class="card__text--title">Calculator</h1>
-          <p class="class__text--description">
-            Uses data from past projects to provide better delivery
-            estimates
-          </p>
-        </div>
-      </section>
+      <div class="cards">
+        <section class="card green">
+          <div class="card__text">
+            <h2 class="card__text--title">Supervisor</h1>
+            <p class="card__text--description">
+              Monitors activity to identify
+              project roadblocks
+            </p>
+          </div>
+          <picture class="card__picture">
+            <img class="card__picture--image" src="./src/images/icon-supervisor.svg" alt="Supervisor">
+          </picture>
+        </section>
+        <section class="card red" >
+          <div class="card__text">
+            <h2 class="card__text--title">Team Builder</h1>
+            <p class="card__text--description">
+              Scans our talent network to create the
+              optimal team for your project
+            </p>
+          </div>
+          <picture class="card__picture">
+            <img class="card__picture--image" src="./src/images/icon-team-builder.svg" alt="Supervisor">
+          </picture>
+        </section>
+        <section class="card yellow" >
+          <div class="card__text">
+            <h2 class="card__text--title">Karma</h1>
+            <p class="card__text--description">
+              Regularly evaluates our talent to ensure
+              quality
+            </p>
+          </div>
+          <picture class="card__picture">
+            <img class="card__picture--image" src="./src/images/icon-karma.svg" alt="Supervisor">
+          </picture>
+        </section>
+        <section class="card blue" >
+          <div class="card__text">
+            <h2 class="card__text--title">Calculator</h1>
+            <p class="card__text--description">
+              Uses data from past projects to provide better delivery
+              estimates
+            </p>
+          </div>
+          <picture class="card__picture">
+            <img class="card__picture--image" src="./src/images/icon-calculator.svg" alt="Supervisor">
+          </picture>
+        </section>
+      </div>
     </main>
   </body>
 </html>

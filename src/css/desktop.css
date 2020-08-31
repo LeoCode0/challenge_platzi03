@@ -1,0 +1,35 @@
+.information__titles--h1, .information__titles--h3{
+    font-size: 2rem;
+}
+
+.cards{
+    grid-template-columns: repeat(3, minmax(20rem, 25rem));
+    grid-template-rows: repeat(4, 10rem);
+    column-gap: 2rem;
+    width: max-content;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.card{
+    max-width: 25rem;
+    max-height: 25rem;
+    min-height: 18rem;
+}
+
+.card:nth-child(1){
+    grid-row: 2/4;
+}
+.card:nth-child(2){
+    grid-column: 2/3;
+}
+
+.card:nth-child(3){
+    grid-column: 2/3;
+    grid-row: 3/5;
+}
+
+.card:nth-child(4){
+    grid-column: 3/4;
+    grid-row: 2/4;
+}
